@@ -1,0 +1,41 @@
+title: "Living Article Generator"
+description: "Technical thought pieces on AI-assisted development, architecture, and the craft of building software."
+author:
+  name: "Steven Molen"
+
+url: "https://darthmolen.github.io"
+baseurl: "/living-article-generator"
+
+theme: minima
+
+collections_dir: content
+
+collections:
+  articles:
+    output: true
+    permalink: /articles/:title/
+    sort_by: date
+
+exclude:
+  - CLAUDE.md
+  - README.md
+  - LICENSE
+  - src
+  - content/INTAKE
+  - content/MATERIAL
+  - content/BACKLOG
+  - content/VERSIONS
+  - Gemfile
+  - Gemfile.lock
+
+defaults:
+  - scope:
+      path: ""
+      type: "articles"
+    values:
+      layout: "article"
+      author: "Steven Molen"
+
+markdown: kramdown
+kramdown:
+  input: GFM
