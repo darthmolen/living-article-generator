@@ -19,6 +19,7 @@ This is both a content repository and a code repository.
   - **VERSIONS/** — Iteration drafts of articles in progress
   - **_articles/** — Published, finalized articles (Jekyll collection)
 - **src/** — Code (pipeline tooling, future automation)
+- **planning/** — AI kanban board (backlog, in-progress, completed)
 - **_layouts/** — Jekyll layout templates
 - **_config.yml** — Jekyll site configuration
 - **index.md** — Site home page
@@ -32,6 +33,20 @@ Site URL: `https://darthmolen.github.io/living-article-generator/`
 ### Jekyll
 
 The site uses Jekyll with the `minima` theme, built automatically by GitHub Pages on push to `main`. Articles in `content/_articles/` require YAML front matter (`title`, `subtitle`, `date`, `tags`). The layout renders title/subtitle from front matter, so articles should not include an H1 heading or subtitle line in the body.
+
+### AI Kanban Workflow
+
+Plans are tracked in `planning/` using a kanban-style flow:
+
+- **planning/backlog/** — Planned work not yet started
+- **planning/in-progress/** — Active plans being executed
+- **planning/completed/** — Finished plans with summary and task checklist
+
+**Workflow:**
+
+1. When exiting plan mode, copy the plan to `planning/in-progress/`
+2. During execution, update the plan file with task status (`- [x]` / `- [ ]`)
+3. On completion, move the plan to `planning/completed/` with a `## Summary` section at the top and all tasks marked complete
 
 ## Content Themes
 
