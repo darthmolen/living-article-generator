@@ -25,6 +25,7 @@ exclude:
   - content/MATERIAL
   - content/BACKLOG
   - content/VERSIONS
+  - content/PUBLISHED
   - Gemfile
   - Gemfile.lock
 
