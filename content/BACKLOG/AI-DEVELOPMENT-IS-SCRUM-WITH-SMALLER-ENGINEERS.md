@@ -48,7 +48,7 @@ Every good Scrum team has a working agreement. Code style, branching strategy, t
 
 AI agents need the same thing, written down, in a file they read before every session.
 
-Claude has `CLAUDE.md`. Copilot has `.copilot-instructions.md`. Every agent framework has some version of a manifest or rules file. These are your working agreements. Treat them that way.
+Claude has `CLAUDE.md`. Copilot has `.copilot-instructions.md`. Every agent framework has some version of a manifest or rules file. These are your working agreements. Treat them that way. Don't over-bloat them as they get read for every request you make.
 
 Here's what goes in mine:
 
@@ -79,15 +79,38 @@ Questions produce better context. Better context produces better code. This isn'
 
 ## Spikes: Bounded Exploration
 
-In Scrum, a spike is a timeboxed investigation. You don't know enough to estimate a story, so you spend a fixed amount of time learning. The deliverable is knowledge, not code.
+AI's default mode is "generate code." Give it a problem and it will start building, immediately, without stopping to ask whether it understands the problem. You've seen this with junior developers too -- the ones who start typing before they finish reading the ticket. Spikes exist to force the stop.
 
-AI spikes work the same way, and they're one of the most underused techniques in AI-assisted development.
+In AI-assisted development, I use two kinds of spikes. Both serve the same purpose: interrupt the AI's bias toward action and redirect it toward understanding.
 
-When I don't know enough about a library, an API, or an architectural approach, I tell the AI: "This is a spike. Spend no more than 30 minutes exploring the Copilot SDK's session management API. I want to understand: what events are available, what the lifecycle looks like, and whether we can hook into session termination. Produce a summary document, not code."
+### The Research Spike
 
-The deliverable is a research document in the `research/` folder. I read it, ask follow-up questions, and *then* plan the implementation.
+When I don't know enough about a library, API, or architectural approach, I tell the AI: "This is a spike. Explore the session management API. I want to understand: what events are available, what the lifecycle looks like, and whether we can hook into session termination. Produce a summary document, not code."
 
-You'd be surprised what comes back. AI is excellent at reading documentation and synthesizing findings. It's terrible at knowing what to do with those findings. The spike separates the research from the decision-making, and that separation is the key.
+The deliverable is a research document in the `research/` or `documentation/` folder (depending on whether you want to keep it in your source code or not). I read it, ask follow-up questions, and *then* plan the implementation with AI involved. The benefit of this approach is that you don't have to implement now. You and the AI can read that artifact in a future phase and implement then -- the knowledge isn't lost at the context boundary.
+
+This is powerful when you don't know what you don't know. AI is excellent at reading documentation and synthesizing findings. It's terrible at knowing what to do with those findings. It's even worse at remembering that knowledge when it goes to write the code. The spike separates the research from the decision-making, and that separation is the key.
+
+### The Bare Bones Code Spike
+
+This one usually starts with me watching the AI struggle. A bug has surfaced when consuming a component, or the way we're using it doesn't feel right. The AI tries a fix. Then another. Each workaround gets more creative and less correct. That's when I intervene.
+
+"Stop. Let's spike this with a simpler test."
+
+The process is specific, and the AI prompt you use follows these steps:
+
+1. Pull the actual component code or documentation.
+2. Research how the component's own samples handle the use case -- or read the source itself.
+3. Write an integration test that strips the problem down to its absolute core, using the component directly.
+
+The goal is two-fold:
+
+1. A verdict: is this a component issue or our code's issue?
+2. What is the right way to use this third-party code?
+
+By removing your application's layers of abstraction, you force the AI to work with the component as it was intended to be used. Half the time, the "bug" turns out to be your code misusing the component. The other half, you've got a clean reproduction case you can actually file or work around intelligently.
+
+Both spike types counter the same AI tendency -- jumping straight to implementation. One says "go learn first." The other says "stop struggling and simplify." Both produce better outcomes than letting the AI keep trying.
 
 ---
 
@@ -200,7 +223,7 @@ If you've run a Scrum team, you already know how to manage AI. You just need the
 | Product Owner | You, defining requirements and priorities |
 | Development Team | Your AI agents |
 | Team Norms / Working Agreement | CLAUDE.md, .copilot-instructions, rules files |
-| Spike | Bounded research task with explicit deliverables |
+| Spike | Bounded research ("bring back a document") or bare-bones code spike ("is this the component or our code?") |
 | Timebox | "Try this three times, then stop and report findings" |
 | Kanban Board | `planning/` folder with `backlog/`, `in-progress/`, `completed/` |
 | User Stories | Structured prompts with context, constraints, and acceptance criteria |

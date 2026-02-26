@@ -17,6 +17,7 @@ This is both a content repository and a code repository.
   - **MATERIAL/** — Incomplete ideas that could be constructed into something later
   - **BACKLOG/** — Ideas with a rough draft or earmarked for future elaboration
   - **VERSIONS/** — Iteration drafts of articles in progress
+  - **PUBLISHED/** — Final drafts promoted to _articles (archive of what shipped)
   - **_articles/** — Published, finalized articles (Jekyll collection)
 - **src/** — Code (pipeline tooling, future automation)
 - **planning/** — AI kanban board (backlog, in-progress, completed)
@@ -26,7 +27,7 @@ This is both a content repository and a code repository.
 
 ### Content Pipeline
 
-Ideas flow: INTAKE → MATERIAL → BACKLOG → VERSIONS (iterate) → _articles → published via GitHub Pages.
+Ideas flow: INTAKE → MATERIAL → BACKLOG → VERSIONS (iterate) → PUBLISHED (final draft archived) → _articles → published via GitHub Pages.
 
 Site URL: `https://darthmolen.github.io/living-article-generator/`
 
