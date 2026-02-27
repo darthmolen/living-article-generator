@@ -7,7 +7,7 @@ tags: [ai, scrum, architecture, workflow, team-management]
 
 ## The Story
 
-I've been running Scrum teams for the better part of two decades. Somewhere around week three of building a VS Code extension with AI agents, I stopped mid-prompt and laughed out loud.
+I've been running or participating in Scrum teams for the better part of two decades. Somewhere around week three of building a VS Code extension with AI agents, I stopped mid-prompt and laughed out loud.
 
 I was writing acceptance criteria. I was timeboxing a spike. I was reviewing output and sending it back with notes. I was managing a backlog, tracking what was done, and planning the next iteration.
 
@@ -19,7 +19,7 @@ Thirty years of building software taught me how to manage teams. Turns out, the 
 
 ## Treat AI Like a Brilliant Junior Developer
 
-This is the single most useful mental model I've found. Your AI agent is a junior developer who is brilliant, tireless, and well-read -- but lacks judgment, context, and the ability to see past the current task.
+Your AI agent is a junior developer who is brilliant, tireless, and well-read -- but lacks judgment, context, and the ability to see past the current task.
 
 Every experienced tech lead knows that junior developers share a set of traits. They work fast. They produce output. They follow instructions literally. They miss the forest for the trees. They chase the interesting problem instead of the important one. They need structure, boundaries, and clear requirements to do their best work.
 
@@ -209,7 +209,7 @@ The developers who thrive with AI are the ones who already knew how to run a tea
 
 ## The Rosetta Stone: Scrum Meets AI
 
-If you've run a Scrum team, you already know how to manage AI. You just need the vocabulary mapping.
+If you've run or participated in a Scrum team, you already know how to manage AI. You just need the vocabulary mapping.
 
 | Scrum Concept | AI Development Equivalent |
 |---|---|
