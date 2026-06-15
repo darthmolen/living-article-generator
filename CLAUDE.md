@@ -68,3 +68,17 @@ All articles relate to AI-assisted software development and architecture. Key re
 ## Writing Style
 
 When co-authoring or editing articles, match the author's voice: direct, opinionated, practitioner-focused. Uses concrete examples from real projects rather than abstract theory. Favors analogies that map unfamiliar concepts to well-understood ones (e.g., VS Code extensions as client/server apps, AI agents as junior developers in Scrum).
+
+### Titles and headings — no bait, ever (ironclad)
+
+A title or heading is a contract, not a hook. It MUST state what the section actually says — the conclusion, the question, or the subject — and nothing more. This rule is absolute and overrides any instinct toward "engagement":
+
+- **No teasing, withholding, or over-promising.** No "...and the surprise," "you won't believe," "the one trick," vague curiosity gaps, or manufactured suspense.
+- **No nonsense.** If a reader cannot predict the content from the heading, the heading is wrong.
+- **Say what will be said.** The heading announces the payload; the body delivers exactly that.
+
+Roach motel: bait tactics check in, they do not check out. When editing, treat any bait-flavored heading as a defect to fix, not a stylistic preference to weigh.
+
+### Capitalization
+
+Headings use **sentence case** (capitalize only the first word and proper nouns/acronyms), not title case. Rationale: sentence case localizes cleanly — title case is an English-only convention that doesn't survive translation. Keep each article internally consistent.
