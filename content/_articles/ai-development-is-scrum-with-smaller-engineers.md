@@ -239,8 +239,8 @@ Read that table once. Now every Scrum instinct you have applies to AI developmen
 *GIST co-authored with Claude Opus 4.6 -- because thirty years of managing developers turns out to be the best training for managing AI, and I'd rather spend my time building than writing about building.*
 
 *This is part of a series on building VS Code extensions with AI. See also:*
-- *[THE-AI-JOURNEY.md](THE-AI-JOURNEY.md) -- How AI is both a 10x multiplier and a 10x liability*
-- *[VSCODE-EXTENSIONS-ARE-CLIENT-SERVER.md](VSCODE-EXTENSIONS-ARE-CLIENT-SERVER.md) -- The mental model nobody gives you*
-- *[MARKDOWN-IS-THE-LANGUAGE-OF-AI.md](MARKDOWN-IS-THE-LANGUAGE-OF-AI.md) -- On the millions being left on the table*
+- *[AI Is a 10x Multiplier — For Better and For Worse]({{ '/articles/the-ai-journey/' | relative_url }}) -- How AI is both a 10x multiplier and a 10x liability*
+- *[VS Code Extensions Are Client/Server Apps (Nobody Told Me Either)]({{ '/articles/vscode-extensions-are-client-server/' | relative_url }}) -- The mental model nobody gives you*
+- *[Markdown Is the Language of AI, and Every LLM Speaks It Like Pig Latin]({{ '/articles/markdown-is-the-language-of-ai/' | relative_url }}) -- On the millions being left on the table*
 
 ---

@@ -143,11 +143,9 @@ The developers who thrive with AI are the ones who design for the constraint. Ev
 *GIST co-authored with Claude Opus 4.6 -- because the best thing you can do for your AI is understand the box it's working inside.*
 
 *This is part of a series on building VS Code extensions with AI. See also:*
-- *[AI-DEVELOPMENT-IS-SCRUM-WITH-SMALLER-ENGINEERS.md](AI-DEVELOPMENT-IS-SCRUM-WITH-SMALLER-ENGINEERS.md) -- On managing non-deterministic junior developers*
-- *[AI-SPIKES-EXPLAINED.md](AI-SPIKES-EXPLAINED.md) -- Two techniques that save hours of thrashing*
-- *[AI-NO-VENDOR-LOCK-IN.md](AI-NO-VENDOR-LOCK-IN.md) -- On switching AI tools without missing a beat*
-- *[THE-AI-JOURNEY.md](THE-AI-JOURNEY.md) -- How AI is both a 10x multiplier and a 10x liability*
-- *[VSCODE-EXTENSIONS-ARE-CLIENT-SERVER.md](VSCODE-EXTENSIONS-ARE-CLIENT-SERVER.md) -- The mental model nobody gives you*
-- *[MARKDOWN-IS-THE-LANGUAGE-OF-AI.md](MARKDOWN-IS-THE-LANGUAGE-OF-AI.md) -- On the millions being left on the table*
+- *[AI Development Is Just Scrum With Smaller Engineers]({{ '/articles/ai-development-is-scrum-with-smaller-engineers/' | relative_url }}) -- On managing non-deterministic junior developers*
+- *[AI Is a 10x Multiplier — For Better and For Worse]({{ '/articles/the-ai-journey/' | relative_url }}) -- How AI is both a 10x multiplier and a 10x liability*
+- *[VS Code Extensions Are Client/Server Apps (Nobody Told Me Either)]({{ '/articles/vscode-extensions-are-client-server/' | relative_url }}) -- The mental model nobody gives you*
+- *[Markdown Is the Language of AI, and Every LLM Speaks It Like Pig Latin]({{ '/articles/markdown-is-the-language-of-ai/' | relative_url }}) -- On the millions being left on the table*
 
 ---
