@@ -1,0 +1,77 @@
+---
+# Front matter (the dashes) tells Jekyll to process this SCSS.
+# Imports the minima theme, then overrides it with a dark navy palette.
+# Done as an explicit override because the github-pages minima build
+# ignores `minima.skin: dark`.
+---
+
+@import "minima";
+
+// ---- Dark navy palette -----------------------------------------------------
+$navy-bg:      #0a192f; // page background
+$navy-surface: #112240; // code blocks, table headers
+$navy-row:     #0e2746; // zebra-striped table rows
+$navy-border:  #1e3a5f; // borders / rules
+$ink:          #c7d0db; // body text
+$ink-bright:   #e6f1ff; // headings / titles
+$ink-muted:    #9fb0c3; // meta, footer, blockquotes
+$link:         #64b5f6; // links
+$link-visited: #90caf9;
+
+body {
+  background-color: $navy-bg;
+  color: $ink;
+}
+
+h1, h2, h3, h4, h5, h6,
+.post-title,
+.site-title, .site-title:visited {
+  color: $ink-bright;
+}
+
+a            { color: $link; }
+a:visited    { color: $link-visited; }
+a:hover      { color: #ffffff; }
+
+.post-meta,
+.post-content,
+.page-content,
+.footer-col-wrapper,
+.footer-heading { color: $ink; }
+
+.post-meta,
+.footer-col-wrapper { color: $ink-muted; }
+
+blockquote {
+  color: $ink-muted;
+  border-left-color: $navy-border;
+}
+
+pre, code {
+  background-color: $navy-surface;
+  border-color: $navy-border;
+  color: $ink;
+}
+.highlight,
+.highlighter-rouge .highlight { background: $navy-surface; }
+.highlight { color: $ink; }
+
+hr { border-color: $navy-border; }
+
+// Tables (the articles lean on these heavily)
+table        { color: $ink; border-color: $navy-border; }
+table th     { background-color: $navy-surface; color: $ink-bright; border-color: $navy-border; }
+table td     { border-color: $navy-border; }
+table tr:nth-child(even) { background-color: $navy-row; }
+
+// Site chrome
+.site-header { border-top-color: $link; border-bottom-color: $navy-border; }
+.site-nav .page-link { color: $ink; }
+.site-footer { border-top-color: $navy-border; }
+
+@media screen and (max-width: 600px) {
+  .site-nav {
+    background-color: $navy-surface;
+    border-color: $navy-border;
+  }
+}
