@@ -133,7 +133,7 @@ deterministic shell.
 
 When a step is correctly in the model bucket and *still* underperforms, diagnosing why —
 knowledge, behavior, or capability — is its own decision. That's the follow-up:
-[Knowledge, Behavior, or Capability?]({{ '/articles/ai-model-gap-analysis/' | relative_url }}).
+[Knowledge, Behavior, or Capability?]({{ '/articles/AI-MODEL-GAP-ANALYSIS/' | relative_url }}).
 
 ### Example 1, LLM was the wrong default choice
 
@@ -219,4 +219,4 @@ wrong cheaply.
 
 *Part one of a two-part series. The companion piece:*
 
-- *[Knowledge, Behavior, or Capability?]({{ '/articles/ai-model-gap-analysis/' | relative_url }}) — the model's correctly in the loop and still underperforming; diagnose the gap before you build the pipeline*
+- *[Knowledge, Behavior, or Capability?]({{ '/articles/AI-MODEL-GAP-ANALYSIS/' | relative_url }}) — the model's correctly in the loop and still underperforming; diagnose the gap before you build the pipeline*

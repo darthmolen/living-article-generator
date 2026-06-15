@@ -5,7 +5,7 @@ date: 2026-06-15
 tags: [ai, llm, rag, fine-tuning, evaluation, architecture]
 ---
 
-> The follow-up to [Code, Optimizer, or Model?]({{ '/articles/ai-decision-process/' | relative_url }}). That piece gets a step
+> The follow-up to [Code, Optimizer, or Model?]({{ '/articles/AI-DECISION-PROCESS/' | relative_url }}). That piece gets a step
 > *into* the model bucket. This one is what to do when it's there and still falling short.
 
 ---
@@ -207,4 +207,4 @@ last, and only for the slice still standing after everything cheaper has done it
 
 *Part two of a two-part series. Start here:*
 
-- *[Code, Optimizer, or Model?]({{ '/articles/ai-decision-process/' | relative_url }}) — the decision process for what AI should do in the first place, before you ever ask whether it's underperforming*
+- *[Code, Optimizer, or Model?]({{ '/articles/AI-DECISION-PROCESS/' | relative_url }}) — the decision process for what AI should do in the first place, before you ever ask whether it's underperforming*
