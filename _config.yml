@@ -7,6 +7,8 @@ url: "https://darthmolen.github.io"
 baseurl: "/living-article-generator"
 
 theme: minima
+minima:
+  skin: dark
 
 collections_dir: content
 
